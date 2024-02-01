@@ -1,6 +1,15 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
   }
+
+  ::-webkit-scrollbar {
+    display: none;
+}
+
+html, body {
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+}
   
   main {
     display: flex;
@@ -26,7 +35,7 @@
   #handle{
     position: absolute;
     left: 17%;
-    top: 3%;
+    top: 4%;
     width: 2.5%;
   }
   
@@ -224,10 +233,24 @@
   }
 
   .profile-image{
+    position: relative;
     margin-top: 0%;
     width:28%;
     border-radius: 100%;
     
+  }
+
+  #user-status{
+    width:6%;
+    height: 23%;
+    border-radius: 50%;
+    border-color: white;
+    border-width: 2px;
+    border-style:solid;
+    background-color: green;
+    position: absolute;
+    top: 79%;
+    left:18%;
   }
   
   #profile-text-container{
@@ -459,7 +482,7 @@ background-color: rgba(128, 128, 128, 0.125);
     margin-left: 2%;
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
-    box-shadow:2px 2px 10px rgb(202, 202, 202);
+    box-shadow:2px 0px 10px rgb(202, 202, 202);
 
 }
 
@@ -509,8 +532,12 @@ th{
     font-size: 1vw;
     padding-top: 1%;
     padding-bottom: 1%;
-    background-color: rgba(128, 128, 128, 0.161);
+    background-color: rgba(128, 128, 128, 0.042);
     
+}
+
+th i{
+    margin-left: 3%;
 }
 td{
     font-size: 1vw;
@@ -551,6 +578,8 @@ td{
 }
 #user-details{
     width: 60%;
+    text-align:left;
+    margin-left: 2%;
 }
 
 #user-details h4{
