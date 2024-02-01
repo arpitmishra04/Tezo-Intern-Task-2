@@ -99,6 +99,63 @@
     opacity: 0.6;
   }
 
+
+  #update-message{
+    margin-top: 100vh;
+    height: 25vh;
+    margin-right: 5%;
+    margin-left: 2%;
+    margin-bottom: 1vh;
+    border-radius: 6px;
+    background-color: rgba(255, 88, 88, 0.102);
+  }
+
+  #update-message h5 {
+    font-size: 1vw;
+    color: rgba(255, 0, 0, 0.605);
+    padding-top: 12%;
+    padding-left: 4%;
+    margin-bottom: 0%;
+    text-align: left;
+}
+
+#update-message p {
+    font-size: 1.1vw;
+    padding-left: 4%;
+    text-align: left;
+    margin-top: 3%;
+    margin-bottom: 0%;
+    line-height: 20px;
+    color: rgba(128, 128, 128, 0.384);
+}
+
+
+#dismiss-btn,#accept-btn{
+    margin-top: 4%;
+    width: 5.3vw;
+    height: 5.3vh;
+    border-radius: 6px;
+}
+
+#dismiss-btn{
+    font-size: 1vw;
+    margin-left:8%;
+   background-color:  rgba(255, 88, 88, 0.289);
+   border-style: none;
+   color:red
+}
+
+#accept-btn{
+    font-size: 1vw;
+    margin-left: 4%;
+    background-color:  rgba(255, 0, 0, 0.673);
+    border-style: none;
+    color:white
+}
+
+
+
+
   /* SIDE BAR SECTION END */
 
 
@@ -106,11 +163,11 @@
   /* CONTENT SECTION START */
 
     .search{
-        position: relative;
-        width: 98%;
-        height: 18%;
-        margin-top:0.5%;
-        margin-left: 2%;
+    position: relative;
+    width: 98%;
+    height: 6%;
+    margin-top: 0.5%;
+    margin-left: 2%;
     }
 
     .search-input{
@@ -132,13 +189,13 @@
         position: absolute;
         width: 2%;
         left: 1.5%;
-        top: 33%;
+        top: 32%;
     }
   
     #icon-menu-container{
         position: absolute;
         left: 63%;
-        top: 22%;
+        top: 12%;
     
     }
 
@@ -155,7 +212,7 @@
         display: flex;
         position: absolute;
         right: 2%;
-        top:20%;
+        top:15%;
         width: 13%;
     }
 
@@ -168,7 +225,7 @@
 
   .profile-image{
     margin-top: 0%;
-    width:33%;
+    width:28%;
     border-radius: 100%;
     
   }
@@ -189,13 +246,17 @@
     font-weight: 800;
   }
 
-  #profile-dropdown-container{
-    height: 100%;
-    margin-left: 4%;
-    font-size: 2vw; 
-    margin-top: -4%;
+  #profile-dropdown{
+    position: absolute;
+    /* height: 57%; */
+    width: 1vw;
+    /* margin-left: 4%; */
+    font-size: 2vw;
+    /* margin-top: -7%; */
     margin-bottom: 10%;
-  }
+    right: 0%;
+}
+
   #profile-dropdown{
     border-style: none;
   }
@@ -203,42 +264,80 @@
 
   #content-employee{
     display: flex;
+    margin-top:0%;
+    margin-left: 2%;
    
   }
   #content-employee-title{
     line-height: 81%;
   }
 
+  #content-employee-title p{
+    white-space: nowrap;
+    font-size: 1.1vw;
+    color: rgba(128, 128, 128, 0.676);
+  }
+
+  #content-employee-title h4{
+    font-size: 1.1vw;
+    color: rgba(0, 51, 101, 0.613);
+  }
+
   .employee-operation{
     display: flex;
     width: 60%;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: flex-end;
   }
 
   #export-btn,#add-employee-btn{
-    margin-top:3%; 
-    height: 60%;
+    position: relative;
+    margin-top:4%; 
+    height: 50%;
     border-radius: 7px;
     border-width:0px;
+    
+
 
   }
   #export-btn{
     width: 20%;
+    font-size: 0.9vw;
     
   }
+  #export-icon{
+    position: absolute;
+    width: 1.3vw;
+    left: 7%;
+    top:18%;
+  }
   #add-employee-btn{
-    width: 30%;
-    margin-left: 10%;
+    width: 40%;
+    margin-left: 2%;
+    font-size: 1vw;
     background-color: rgb(255, 88, 88);
     color: white;
-    font-weight: 600;
+    font-weight: 200;
+  }
+
+  #add-employee-icon{
+    position: absolute;
+    width: 1.6vw;
+    left: 11%;
+    top: 18%;   
+
   }
 
 
   .filter-icon{
-    width: 2vw;
+    width: 1.4vw;
+    margin-left: 2%;
     margin-right: 1%;
+  }
+
+  .filter-icon img{
+    width: 100%;
+    margin-top: 50%;
   }
 
 
@@ -249,6 +348,7 @@
 
 #employee-filter{
     display: flex;
+    margin-top:2%;
 
 }
 
@@ -261,32 +361,42 @@
 }
 
 .search-by-letter{
-width: 2vw;
-height: 5vh;
+width: 2.5vw;
+height: 6vh;
+font-size: 1vw;
+border-style: none;
+border-radius: 7px;
+background-color: rgba(128, 128, 128, 0.125);
 
 }
    
 
 .filter-categories{
     display: flex;
-    height:30%;
-    border-radius: 10px;
-    margin-top: 5%;
-    background-color: rgb(255 227 227);
+    height: 30%;
+    border-radius: 7px;
+    margin-top: 2%;
+    margin-left: 2%;
+    background-color: rgb(255 227 227); 
 }
 
 .filter-categories p{
     color:rgb(255, 88, 88); 
     margin-left: 1%;
+    
+    font-size: 1.1vw;
 }
 
 #dropdown-options{
-    width:60%
+    width:60%;
+    margin-bottom: 1%;
 }
 #dropdown-options select{
-    height: 80%;
-    border-radius: 7px;
     margin-top: 1%;
+    height: 90%;
+    border-radius: 7px;
+    border-color: red;
+    font-size: 1vw;
     
 
 }
@@ -308,28 +418,153 @@ height: 5vh;
 
 .employee-filter-btn-container{
     display: flex;
-    margin-left: 10%;
-    width:20%
+    margin-left: 23%;
+    width:10%
 }
 
 #reset,#apply{
-    margin-top: 3%;
-    border-radius: 7px;
+    height: 55%;
+    width: 50%;
+    margin-top: 10%;
+    border-radius: 5px;
     border-width: 0px;
+    font-size: 0.9vw;
 }
 
 #reset{
-    height: 70%;
-    width: 80%;
+    
     color: rgb(255, 88, 88);
     background-color: white;
     border-width: 1px;
     border-color: red;
 }
 #apply{
-    height: 70%;
     margin-left: 5%;
-    width: 80%;
     background-color: rgb(255, 88, 88);
     color: white;
 }
+
+/* EMPLOYEE DATA TABLE SECTION START */
+
+/* TABLE OPERATION DIVISON START */
+
+#employee-data-table{
+    height:150px;
+}
+
+#employee-data-table #table-operations{
+    position: relative;
+    margin-top: 2%;
+    height: 30%;
+    margin-left: 2%;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    box-shadow:2px 2px 10px rgb(202, 202, 202);
+
+}
+
+#delete-operation-btn{
+    position: absolute;
+    left: 2%;
+    margin-left: 2%;
+    margin-top: 1%;
+    width: 5vw;
+    height:60%;
+    background-color: rgb(255, 142, 142);
+    color: white;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: red;
+    font-size: 1.2vw;
+}
+
+#employee-data-table #table-operations #arrow-left-down-img{
+    position: absolute;
+    width: 1.5vw;
+    top: 25%;
+    left:1%;
+
+
+}
+
+#employee-data-table #table-operations #add-operation-img{
+    position: absolute;
+    width: 1.5vw;
+    top: 16%;
+    right:3%;
+
+}
+/* TABLE OPERATION DIVISON END */
+
+/* TABLE DATA DIVISON START */
+
+table{
+    margin-top: 0%;
+    width: 98%;
+    margin-left:2%;
+    border-collapse: collapse;
+    box-shadow: 0px 11px 23px rgb(202, 202, 202);
+}
+th{
+    font-size: 1vw;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: rgba(128, 128, 128, 0.161);
+    
+}
+td{
+    font-size: 1vw;
+    text-align: center;
+    width: 13%;
+    padding-top: 1%;
+    padding-bottom:1%;
+    border-bottom:1px solid black
+}
+
+.table-btn{
+    width: 5vw;
+    height: 4vh;
+    font-size: 1vw;
+    color: green;
+    background-color: rgba(0, 128, 0, 0.122);
+    border-style: none;
+    border-radius: 5px;
+}
+
+#user-name{
+    display: flex;
+   align-items: center;
+}
+
+#user-img{
+    height: 100%;
+    width: 25%;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+#user-details h4,h6{
+    margin-top:0;
+    margin-bottom: 0;
+
+
+}
+#user-details{
+    width: 60%;
+}
+
+#user-details h4{
+    font-size: smaller;
+}
+
+ #user-img img{
+    padding-top: 4%;
+    width: 100%;
+ }
+
+/* TABLE DATA DIVISION END */
+
+/* EMPLOYEE DATA TABLE SECRION END */
+
+
+

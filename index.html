@@ -45,6 +45,16 @@
             <p>Access Rights</p>
           </div>
         </div>
+
+
+        <div id="update-message">
+            <h5>Install new update 2.3.1A</h5>
+            <p>Allow to launch the new update for the AD application</p>
+            <div id="update-message-btn-container">
+                <button id="dismiss-btn" class="update-message-btn">Dismiss</button>
+                <button id="accept-btn" class="update-message-btn">Accept</button>
+            </div>
+        </div>
       </section>
       <section id="content">
         <div class="search">
@@ -90,9 +100,8 @@
               <p id="profile-name">Jhon Abraham</p>
               <p id="profile-designation">Admin</p>
             </div>
-            <div id="profile-dropdown-container">
               <select name="profile-dropdown" id="profile-dropdown"></select>
-            </div>
+            
           </div>
         </div>
 
@@ -106,8 +115,8 @@
           </div>
 
           <div class="employee-operation">
-            <button id="export-btn">Export</button>
-            <button id="add-employee-btn">+ Add Employee</button>
+            <button id="export-btn"><img id="export-icon" src="Assets/Images/Interface/Export.svg"/>EXPORT</button>
+            <button id="add-employee-btn"><img id="add-employee-icon" src="Assets/Images/Interface/Add.svg"/>ADD EMPLOYEEE</button>
           </div>
         </div>
 
@@ -165,6 +174,291 @@
               <button id="apply">Apply</button>
             </div>
           </div>
+        </div>
+
+
+        <div id="employee-data-table">
+            <div id="table-operations">
+                <img id="arrow-left-down-img" src="Assets/Images/Interface/arrow-turn left -down.svg" alt="arrow-turn-left-down">
+                <button id="delete-operation-btn">Delete</button>
+                <img id="add-operation-img" src="Assets/Images/Interface/table-add.svg" alt="add-row-img ">
+            </div>
+            <div id="table-data">
+
+                <table>
+                    <tr>
+                        <th><input type="checkbox"></th>
+                        <th>USER</th>
+                        <th>LOCATION</th>
+                        <th>DEPARTMENT</th>
+                        <th>ROLE</th>
+                        <th>EMP NO</th>
+                        <th>STATUS</th>
+                        <th>JOIN DT</th>
+                        <th>&#8943;</th>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>
+                            <div id="user-name">
+                                <div  id="user-img">
+                                    <img src="Assets/Images/user.png"/>
+                                </div>
+                                <div id="user-details">
+                                    <h4>Edgar jones</h4>
+                                    <h6>edgar@tezo.com</h6>
+                                </div>
+                            </div>
+                        </td>
+                        <td>Hyderabad</td>
+                        <td>Product Engg</td>
+                        <td>Full-stack Developer</td>
+                        <td>TZ002341</td>
+                        <td><button class="table-btn">Active</button></td>
+                        <td>12/03/2023</td>
+                        <td>&#8943;</td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>
+                            <div id="user-name">
+                                <div  id="user-img">
+                                    <img src="Assets/Images/user.png"/>
+                                </div>
+                                <div id="user-details">
+                                    <h4>Edgar jones</h4>
+                                    <h6>edgar@tezo.com</h6>
+                                </div>
+                            </div>
+                        </td>
+                        <td>Hyderabad</td>
+                        <td>Product Engg</td>
+                        <td>Full-stack Developer</td>
+                        <td>TZ002341</td>
+                        <td><button class="table-btn">Active</button></td>
+                        <td>12/03/2023</td>
+                        <td>&#8943;</td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>
+                            <div id="user-name">
+                                <div  id="user-img">
+                                    <img src="Assets/Images/user.png"/>
+                                </div>
+                                <div id="user-details">
+                                    <h4>Edgar jones</h4>
+                                    <h6>edgar@tezo.com</h6>
+                                </div>
+                            </div>
+                        </td>
+                        <td>Hyderabad</td>
+                        <td>Product Engg</td>
+                        <td>Full-stack Developer</td>
+                        <td>TZ002341</td>
+                        <td><button class="table-btn">Active</button></td>
+                        <td>12/03/2023</td>
+                        <td>&#8943;</td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>
+                            <div id="user-name">
+                                <div  id="user-img">
+                                    <img src="Assets/Images/user.png"/>
+                                </div>
+                                <div id="user-details">
+                                    <h4>Edgar jones</h4>
+                                    <h6>edgar@tezo.com</h6>
+                                </div>
+                            </div>
+                        </td>
+                        <td>Hyderabad</td>
+                        <td>Product Engg</td>
+                        <td>Full-stack Developer</td>
+                        <td>TZ002341</td>
+                        <td><button class="table-btn">Active</button></td>
+                        <td>12/03/2023</td>
+                        <td>&#8943;</td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>
+                            <div id="user-name">
+                                <div  id="user-img">
+                                    <img src="Assets/Images/user.png"/>
+                                </div>
+                                <div id="user-details">
+                                    <h4>Edgar jones</h4>
+                                    <h6>edgar@tezo.com</h6>
+                                </div>
+                            </div>
+                        </td>
+                        <td>Hyderabad</td>
+                        <td>Product Engg</td>
+                        <td>Full-stack Developer</td>
+                        <td>TZ002341</td>
+                        <td><button class="table-btn">Active</button></td>
+                        <td>12/03/2023</td>
+                        <td>&#8943;</td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>
+                            <div id="user-name">
+                                <div  id="user-img">
+                                    <img src="Assets/Images/user.png"/>
+                                </div>
+                                <div id="user-details">
+                                    <h4>Edgar jones</h4>
+                                    <h6>edgar@tezo.com</h6>
+                                </div>
+                            </div>
+                        </td>
+                        <td>Hyderabad</td>
+                        <td>Product Engg</td>
+                        <td>Full-stack Developer</td>
+                        <td>TZ002341</td>
+                        <td><button class="table-btn">Active</button></td>
+                        <td>12/03/2023</td>
+                        <td>&#8943;</td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>
+                            <div id="user-name">
+                                <div  id="user-img">
+                                    <img src="Assets/Images/user.png"/>
+                                </div>
+                                <div id="user-details">
+                                    <h4>Edgar jones</h4>
+                                    <h6>edgar@tezo.com</h6>
+                                </div>
+                            </div>
+                        </td>
+                        <td>Hyderabad</td>
+                        <td>Product Engg</td>
+                        <td>Full-stack Developer</td>
+                        <td>TZ002341</td>
+                        <td><button class="table-btn">Active</button></td>
+                        <td>12/03/2023</td>
+                        <td>&#8943;</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>
+                            <div id="user-name">
+                                <div  id="user-img">
+                                    <img src="Assets/Images/user.png"/>
+                                </div>
+                                <div id="user-details">
+                                    <h4>Edgar jones</h4>
+                                    <h6>edgar@tezo.com</h6>
+                                </div>
+                            </div>
+                        </td>
+                        <td>Hyderabad</td>
+                        <td>Product Engg</td>
+                        <td>Full-stack Developer</td>
+                        <td>TZ002341</td>
+                        <td><button class="table-btn">Active</button></td>
+                        <td>12/03/2023</td>
+                        <td>&#8943;</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>
+                            <div id="user-name">
+                                <div  id="user-img">
+                                    <img src="Assets/Images/user.png"/>
+                                </div>
+                                <div id="user-details">
+                                    <h4>Edgar jones</h4>
+                                    <h6>edgar@tezo.com</h6>
+                                </div>
+                            </div>
+                        </td>
+                        <td>Hyderabad</td>
+                        <td>Product Engg</td>
+                        <td>Full-stack Developer</td>
+                        <td>TZ002341</td>
+                        <td><button class="table-btn">Active</button></td>
+                        <td>12/03/2023</td>
+                        <td>&#8943;</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>
+                            <div id="user-name">
+                                <div  id="user-img">
+                                    <img src="Assets/Images/user.png"/>
+                                </div>
+                                <div id="user-details">
+                                    <h4>Edgar jones</h4>
+                                    <h6>edgar@tezo.com</h6>
+                                </div>
+                            </div>
+                        </td>
+                        <td>Hyderabad</td>
+                        <td>Product Engg</td>
+                        <td>Full-stack Developer</td>
+                        <td>TZ002341</td>
+                        <td><button class="table-btn">Active</button></td>
+                        <td>12/03/2023</td>
+                        <td>&#8943;</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>
+                            <div id="user-name">
+                                <div  id="user-img">
+                                    <img src="Assets/Images/user.png"/>
+                                </div>
+                                <div id="user-details">
+                                    <h4>Edgar jones</h4>
+                                    <h6>edgar@tezo.com</h6>
+                                </div>
+                            </div>
+                        </td>
+                        <td>Hyderabad</td>
+                        <td>Product Engg</td>
+                        <td>Full-stack Developer</td>
+                        <td>TZ002341</td>
+                        <td><button class="table-btn">Active</button></td>
+                        <td>12/03/2023</td>
+                        <td>&#8943;</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>
+                            <div id="user-name">
+                                <div  id="user-img">
+                                    <img src="Assets/Images/user.png"/>
+                                </div>
+                                <div id="user-details">
+                                    <h4>Edgar jones</h4>
+                                    <h6>edgar@tezo.com</h6>
+                                </div>
+                            </div>
+                        </td>
+                        <td>Hyderabad</td>
+                        <td>Product Engg</td>
+                        <td>Full-stack Developer</td>
+                        <td>TZ002341</td>
+                        <td><button class="table-btn">Active</button></td>
+                        <td>12/03/2023</td>
+                        <td>&#8943;</td>
+                    </tr>
+                </table>
+
+
+            </div>
         </div>
       </section>
     </main>
