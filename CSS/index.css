@@ -24,7 +24,7 @@ html, body {
   
   #content {
     width: 82%;
-    height: auto;
+    height: 100%;
   }
 
   #hehe{
@@ -110,11 +110,11 @@ html, body {
 
 
   #update-message{
-    margin-top: 100vh;
-    height: 25vh;
+    position: relative;
+    margin-top: 65vh;
+    height: 45%;
     margin-right: 5%;
     margin-left: 2%;
-    margin-bottom: 1vh;
     border-radius: 6px;
     background-color: rgba(255, 88, 88, 0.102);
   }
@@ -122,7 +122,7 @@ html, body {
   #update-message h5 {
     font-size: 1vw;
     color: rgba(255, 0, 0, 0.605);
-    padding-top: 12%;
+    padding-top: 5%;
     padding-left: 4%;
     margin-bottom: 0%;
     text-align: left;
@@ -134,15 +134,18 @@ html, body {
     text-align: left;
     margin-top: 3%;
     margin-bottom: 0%;
-    line-height: 20px;
+    line-height: 3vh;
     color: rgba(128, 128, 128, 0.384);
 }
 
-
+#update-message-btn-container{
+    width: 16vw;
+}
 #dismiss-btn,#accept-btn{
-    margin-top: 4%;
+    margin-top: 3%;
+    margin-bottom: 5%;
     width: 5.3vw;
-    height: 5.3vh;
+    height:2em;
     border-radius: 6px;
 }
 
@@ -174,7 +177,7 @@ html, body {
     .search{
     position: relative;
     width: 98%;
-    height: 6%;
+    height: 10vh;
     margin-top: 0.5%;
     margin-left: 2%;
     }
@@ -472,13 +475,13 @@ background-color: rgba(128, 128, 128, 0.125);
 /* TABLE OPERATION DIVISON START */
 
 #employee-data-table{
-    height:150px;
+    height:80%;
 }
 
 #employee-data-table #table-operations{
     position: relative;
     margin-top: 2%;
-    height: 30%;
+    height:8vh;
     margin-left: 2%;
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
@@ -521,24 +524,36 @@ background-color: rgba(128, 128, 128, 0.125);
 
 /* TABLE DATA DIVISON START */
 
+
+ #table-data{
+    max-height: 90vh; 
+    overflow-y: auto;
+    width:100%;
+} 
+
 table{
-    margin-top: 0%;
+    
     width: 98%;
     margin-left:2%;
+    margin-right: 0%;
     border-collapse: collapse;
     box-shadow: 0px 11px 23px rgb(202, 202, 202);
 }
 th{
+    position: sticky;
+    top: 0%;
     font-size: 1vw;
     padding-top: 1%;
     padding-bottom: 1%;
-    background-color: rgba(128, 128, 128, 0.042);
+    background-color: rgb(241, 241, 241);
+
     
 }
 
 th i{
     margin-left: 3%;
 }
+
 td{
     font-size: 1vw;
     text-align: center;
