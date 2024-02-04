@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CSS/index.css" />
     <link rel="stylesheet" href="Assets/font-icon/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <title>Tezo</title>
   </head>
   <body>
@@ -37,11 +40,11 @@
         <div class="menu">
           <p id="menu-desc">Role/User Management</p>
           <a href="roles.html">
-          <div id="sidebar-menu-role" class="sidebar-menu-item">
-            <img src="Assets/Images/Horizontal nav/Roles.svg" alt="" />
-            <p>Roles</p>
-          </div>
-        </a>
+            <div id="sidebar-menu-role" class="sidebar-menu-item">
+              <img src="Assets/Images/Horizontal nav/Roles.svg" alt="" />
+              <p>Roles</p>
+            </div>
+          </a>
 
           <div id="sidebar-menu-access" class="sidebar-menu-item">
             <img src="Assets/Images/Horizontal nav/assign user.svg" alt="" />
@@ -49,14 +52,13 @@
           </div>
         </div>
 
-
         <div id="update-message">
-            <h5>Install new update 2.3.1A</h5>
-            <p>Allow to launch the new update for the AD application</p>
-            <div id="update-message-btn-container">
-                <button id="dismiss-btn" class="update-message-btn">Dismiss</button>
-                <button id="accept-btn" class="update-message-btn">Accept</button>
-            </div>
+          <h5>Install new update 2.3.1A</h5>
+          <p>Allow to launch the new update for the AD application</p>
+          <div id="update-message-btn-container">
+            <button id="dismiss-btn" class="update-message-btn">Dismiss</button>
+            <button id="accept-btn" class="update-message-btn">Accept</button>
+          </div>
         </div>
       </section>
       <section id="content">
@@ -104,8 +106,7 @@
               <p id="profile-name">Jhon Abraham</p>
               <p id="profile-designation">Admin</p>
             </div>
-              <select name="profile-dropdown" id="profile-dropdown"></select>
-            
+            <select name="profile-dropdown" id="profile-dropdown"></select>
           </div>
         </div>
 
@@ -119,8 +120,18 @@
           </div>
 
           <div class="employee-operation">
-            <button id="export-btn"><img id="export-icon" src="Assets/Images/Interface/Export.svg"/>EXPORT</button>
-            <button id="add-employee-btn"><img id="add-employee-icon" src="Assets/Images/Interface/Add.svg"/>ADD EMPLOYEEE</button>
+            <button id="export-btn">
+              <img
+                id="export-icon"
+                src="Assets/Images/Interface/Export.svg"
+              />EXPORT
+            </button>
+            <button id="add-employee-btn">
+              <img
+                id="add-employee-icon"
+                src="Assets/Images/Interface/Add.svg"
+              />ADD EMPLOYEEE
+            </button>
           </div>
         </div>
 
@@ -163,16 +174,20 @@
           <div class="filter-categories">
             <p>Filter</p>
             <div id="dropdown-options">
-            <select name="status" id="status-dropdown" title="status">
-              <option selected disabled hidden>Status</option>
-            </select>
-            <select name="location" title="location" id="location-dropdown">
-              <option selected disabled hidden>Location</option>
-            </select>
-            <select name="department" title="department" id="department-dropdown">
-              <option selected disabled hidden>Department</option>
-            </select>
-        </div>
+              <select name="status" id="status-dropdown" title="status">
+                <option selected disabled hidden>Status</option>
+              </select>
+              <select name="location" title="location" id="location-dropdown">
+                <option selected disabled hidden>Location</option>
+              </select>
+              <select
+                name="department"
+                title="department"
+                id="department-dropdown"
+              >
+                <option selected disabled hidden>Department</option>
+              </select>
+            </div>
             <div class="employee-filter-btn-container">
               <button id="reset">Reset</button>
               <button id="apply">Apply</button>
@@ -180,293 +195,297 @@
           </div>
         </div>
 
-
         <div id="employee-data-table">
-            <div id="table-operations">
-                <img id="arrow-left-down-img" src="Assets/Images/Interface/arrow-turn left -down.svg" alt="arrow-turn-left-down">
-                <button id="delete-operation-btn">Delete</button>
-                <img id="add-operation-img" src="Assets/Images/Interface/table-add.svg" alt="add-row-img ">
-            </div>
-            <div id="table-data">
+          <div id="table-operations">
+            <img
+              id="arrow-left-down-img"
+              src="Assets/Images/Interface/arrow-turn left -down.svg"
+              alt="arrow-turn-left-down"
+            />
+            <button id="delete-operation-btn">Delete</button>
+            <img
+              id="add-operation-img"
+              src="Assets/Images/Interface/table-add.svg"
+              alt="add-row-img "
+            />
+          </div>
+          <div id="table-data">
+            <table>
+              <thead>
+                <tr>
+                  <th><input type="checkbox" /></th>
+                  <th>USER<i class="fa-solid fa-sort"></i></th>
+                  <th>LOCATION<i class="fa-solid fa-sort"></i></th>
+                  <th>DEPARTMENT<i class="fa-solid fa-sort"></i></th>
+                  <th>ROLE<i class="fa-solid fa-sort"></i></th>
+                  <th>EMP NO<i class="fa-solid fa-sort"></i></th>
+                  <th>STATUS<i class="fa-solid fa-sort"></i></th>
+                  <th>JOIN DT<i class="fa-solid fa-sort"></i></th>
+                  <th>&#8943;</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><input type="checkbox" /></td>
+                  <td>
+                    <div id="user-name">
+                      <div id="user-img">
+                        <img src="Assets/Images/user.png" />
+                      </div>
+                      <div id="user-details">
+                        <h4>Edgar jones</h4>
+                        <h6>edgar@tezo.com</h6>
+                      </div>
+                    </div>
+                  </td>
+                  <td>Hyderabad</td>
+                  <td>Product Engg</td>
+                  <td>Full-stack Developer</td>
+                  <td>TZ002341</td>
+                  <td><button class="table-btn">Active</button></td>
+                  <td>12/03/2023</td>
+                  <td>&#8943;</td>
+                </tr>
 
-                <table>
-                    <thead>
-                    <tr>
-                        <th><input type="checkbox"></th>
-                        <th>USER<i class="fa-solid fa-sort"></i></th>
-                        <th>LOCATION<i class="fa-solid fa-sort"></i></th>
-                        <th>DEPARTMENT<i class="fa-solid fa-sort"></i></th>
-                        <th>ROLE<i class="fa-solid fa-sort"></i></th>
-                        <th>EMP NO<i class="fa-solid fa-sort"></i></th>
-                        <th>STATUS<i class="fa-solid fa-sort"></i></th>
-                        <th>JOIN DT<i class="fa-solid fa-sort"></i></th>
-                        <th>&#8943;</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>
-                            <div id="user-name">
-                                <div  id="user-img">
-                                    <img src="Assets/Images/user.png"/>
-                                </div>
-                                <div id="user-details">
-                                    <h4>Edgar jones</h4>
-                                    <h6>edgar@tezo.com</h6>
-                                </div>
-                            </div>
-                        </td>
-                        <td>Hyderabad</td>
-                        <td>Product Engg</td>
-                        <td>Full-stack Developer</td>
-                        <td>TZ002341</td>
-                        <td><button class="table-btn">Active</button></td>
-                        <td>12/03/2023</td>
-                        <td>&#8943;</td>
-                    </tr>
+                <tr>
+                  <td><input type="checkbox" /></td>
+                  <td>
+                    <div id="user-name">
+                      <div id="user-img">
+                        <img src="Assets/Images/user.png" />
+                      </div>
+                      <div id="user-details">
+                        <h4>Edgar jones</h4>
+                        <h6>edgar@tezo.com</h6>
+                      </div>
+                    </div>
+                  </td>
+                  <td>Hyderabad</td>
+                  <td>Product Engg</td>
+                  <td>Full-stack Developer</td>
+                  <td>TZ002341</td>
+                  <td><button class="table-btn">Active</button></td>
+                  <td>12/03/2023</td>
+                  <td>&#8943;</td>
+                </tr>
 
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>
-                            <div id="user-name">
-                                <div  id="user-img">
-                                    <img src="Assets/Images/user.png"/>
-                                </div>
-                                <div id="user-details">
-                                    <h4>Edgar jones</h4>
-                                    <h6>edgar@tezo.com</h6>
-                                </div>
-                            </div>
-                        </td>
-                        <td>Hyderabad</td>
-                        <td>Product Engg</td>
-                        <td>Full-stack Developer</td>
-                        <td>TZ002341</td>
-                        <td><button class="table-btn">Active</button></td>
-                        <td>12/03/2023</td>
-                        <td>&#8943;</td>
-                    </tr>
+                <tr>
+                  <td><input type="checkbox" /></td>
+                  <td>
+                    <div id="user-name">
+                      <div id="user-img">
+                        <img src="Assets/Images/user.png" />
+                      </div>
+                      <div id="user-details">
+                        <h4>Edgar jones</h4>
+                        <h6>edgar@tezo.com</h6>
+                      </div>
+                    </div>
+                  </td>
+                  <td>Hyderabad</td>
+                  <td>Product Engg</td>
+                  <td>Full-stack Developer</td>
+                  <td>TZ002341</td>
+                  <td><button class="table-btn">Active</button></td>
+                  <td>12/03/2023</td>
+                  <td>&#8943;</td>
+                </tr>
 
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>
-                            <div id="user-name">
-                                <div  id="user-img">
-                                    <img src="Assets/Images/user.png"/>
-                                </div>
-                                <div id="user-details">
-                                    <h4>Edgar jones</h4>
-                                    <h6>edgar@tezo.com</h6>
-                                </div>
-                            </div>
-                        </td>
-                        <td>Hyderabad</td>
-                        <td>Product Engg</td>
-                        <td>Full-stack Developer</td>
-                        <td>TZ002341</td>
-                        <td><button class="table-btn">Active</button></td>
-                        <td>12/03/2023</td>
-                        <td>&#8943;</td>
-                    </tr>
+                <tr>
+                  <td><input type="checkbox" /></td>
+                  <td>
+                    <div id="user-name">
+                      <div id="user-img">
+                        <img src="Assets/Images/user.png" />
+                      </div>
+                      <div id="user-details">
+                        <h4>Edgar jones</h4>
+                        <h6>edgar@tezo.com</h6>
+                      </div>
+                    </div>
+                  </td>
+                  <td>Hyderabad</td>
+                  <td>Product Engg</td>
+                  <td>Full-stack Developer</td>
+                  <td>TZ002341</td>
+                  <td><button class="table-btn">Active</button></td>
+                  <td>12/03/2023</td>
+                  <td>&#8943;</td>
+                </tr>
 
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>
-                            <div id="user-name">
-                                <div  id="user-img">
-                                    <img src="Assets/Images/user.png"/>
-                                </div>
-                                <div id="user-details">
-                                    <h4>Edgar jones</h4>
-                                    <h6>edgar@tezo.com</h6>
-                                </div>
-                            </div>
-                        </td>
-                        <td>Hyderabad</td>
-                        <td>Product Engg</td>
-                        <td>Full-stack Developer</td>
-                        <td>TZ002341</td>
-                        <td><button class="table-btn">Active</button></td>
-                        <td>12/03/2023</td>
-                        <td>&#8943;</td>
-                    </tr>
+                <tr>
+                  <td><input type="checkbox" /></td>
+                  <td>
+                    <div id="user-name">
+                      <div id="user-img">
+                        <img src="Assets/Images/user.png" />
+                      </div>
+                      <div id="user-details">
+                        <h4>Edgar jones</h4>
+                        <h6>edgar@tezo.com</h6>
+                      </div>
+                    </div>
+                  </td>
+                  <td>Hyderabad</td>
+                  <td>Product Engg</td>
+                  <td>Full-stack Developer</td>
+                  <td>TZ002341</td>
+                  <td><button class="table-btn">Active</button></td>
+                  <td>12/03/2023</td>
+                  <td>&#8943;</td>
+                </tr>
 
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>
-                            <div id="user-name">
-                                <div  id="user-img">
-                                    <img src="Assets/Images/user.png"/>
-                                </div>
-                                <div id="user-details">
-                                    <h4>Edgar jones</h4>
-                                    <h6>edgar@tezo.com</h6>
-                                </div>
-                            </div>
-                        </td>
-                        <td>Hyderabad</td>
-                        <td>Product Engg</td>
-                        <td>Full-stack Developer</td>
-                        <td>TZ002341</td>
-                        <td><button class="table-btn">Active</button></td>
-                        <td>12/03/2023</td>
-                        <td>&#8943;</td>
-                    </tr>
+                <tr>
+                  <td><input type="checkbox" /></td>
+                  <td>
+                    <div id="user-name">
+                      <div id="user-img">
+                        <img src="Assets/Images/user.png" />
+                      </div>
+                      <div id="user-details">
+                        <h4>Edgar jones</h4>
+                        <h6>edgar@tezo.com</h6>
+                      </div>
+                    </div>
+                  </td>
+                  <td>Hyderabad</td>
+                  <td>Product Engg</td>
+                  <td>Full-stack Developer</td>
+                  <td>TZ002341</td>
+                  <td><button class="table-btn">Active</button></td>
+                  <td>12/03/2023</td>
+                  <td>&#8943;</td>
+                </tr>
 
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>
-                            <div id="user-name">
-                                <div  id="user-img">
-                                    <img src="Assets/Images/user.png"/>
-                                </div>
-                                <div id="user-details">
-                                    <h4>Edgar jones</h4>
-                                    <h6>edgar@tezo.com</h6>
-                                </div>
-                            </div>
-                        </td>
-                        <td>Hyderabad</td>
-                        <td>Product Engg</td>
-                        <td>Full-stack Developer</td>
-                        <td>TZ002341</td>
-                        <td><button class="table-btn">Active</button></td>
-                        <td>12/03/2023</td>
-                        <td>&#8943;</td>
-                    </tr>
-
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>
-                            <div id="user-name">
-                                <div  id="user-img">
-                                    <img src="Assets/Images/user.png"/>
-                                </div>
-                                <div id="user-details">
-                                    <h4>Edgar jones</h4>
-                                    <h6>edgar@tezo.com</h6>
-                                </div>
-                            </div>
-                        </td>
-                        <td>Hyderabad</td>
-                        <td>Product Engg</td>
-                        <td>Full-stack Developer</td>
-                        <td>TZ002341</td>
-                        <td><button class="table-btn">Active</button></td>
-                        <td>12/03/2023</td>
-                        <td>&#8943;</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>
-                            <div id="user-name">
-                                <div  id="user-img">
-                                    <img src="Assets/Images/user.png"/>
-                                </div>
-                                <div id="user-details">
-                                    <h4>Edgar jones</h4>
-                                    <h6>edgar@tezo.com</h6>
-                                </div>
-                            </div>
-                        </td>
-                        <td>Hyderabad</td>
-                        <td>Product Engg</td>
-                        <td>Full-stack Developer</td>
-                        <td>TZ002341</td>
-                        <td><button class="table-btn">Active</button></td>
-                        <td>12/03/2023</td>
-                        <td>&#8943;</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>
-                            <div id="user-name">
-                                <div  id="user-img">
-                                    <img src="Assets/Images/user.png"/>
-                                </div>
-                                <div id="user-details">
-                                    <h4>Edgar jones</h4>
-                                    <h6>edgar@tezo.com</h6>
-                                </div>
-                            </div>
-                        </td>
-                        <td>Hyderabad</td>
-                        <td>Product Engg</td>
-                        <td>Full-stack Developer</td>
-                        <td>TZ002341</td>
-                        <td><button class="table-btn">Active</button></td>
-                        <td>12/03/2023</td>
-                        <td>&#8943;</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>
-                            <div id="user-name">
-                                <div  id="user-img">
-                                    <img src="Assets/Images/user.png"/>
-                                </div>
-                                <div id="user-details">
-                                    <h4>Edgar jones</h4>
-                                    <h6>edgar@tezo.com</h6>
-                                </div>
-                            </div>
-                        </td>
-                        <td>Hyderabad</td>
-                        <td>Product Engg</td>
-                        <td>Full-stack Developer</td>
-                        <td>TZ002341</td>
-                        <td><button class="table-btn">Active</button></td>
-                        <td>12/03/2023</td>
-                        <td>&#8943;</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>
-                            <div id="user-name">
-                                <div  id="user-img">
-                                    <img src="Assets/Images/user.png"/>
-                                </div>
-                                <div id="user-details">
-                                    <h4>Edgar jones</h4>
-                                    <h6>edgar@tezo.com</h6>
-                                </div>
-                            </div>
-                        </td>
-                        <td>Hyderabad</td>
-                        <td>Product Engg</td>
-                        <td>Full-stack Developer</td>
-                        <td>TZ002341</td>
-                        <td><button class="table-btn">Active</button></td>
-                        <td>12/03/2023</td>
-                        <td>&#8943;</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>
-                            <div id="user-name">
-                                <div  id="user-img">
-                                    <img src="Assets/Images/user.png"/>
-                                </div>
-                                <div id="user-details">
-                                    <h4>Edgar jones</h4>
-                                    <h6>edgar@tezo.com</h6>
-                                </div>
-                            </div>
-                        </td>
-                        <td>Hyderabad</td>
-                        <td>Product Engg</td>
-                        <td>Full-stack Developer</td>
-                        <td>TZ002341</td>
-                        <td><button class="table-btn">Active</button></td>
-                        <td>12/03/2023</td>
-                        <td>&#8943;</td>
-                    </tr>
-                </tbody>
-                </table>
-
-
-            </div>
+                <tr>
+                  <td><input type="checkbox" /></td>
+                  <td>
+                    <div id="user-name">
+                      <div id="user-img">
+                        <img src="Assets/Images/user.png" />
+                      </div>
+                      <div id="user-details">
+                        <h4>Edgar jones</h4>
+                        <h6>edgar@tezo.com</h6>
+                      </div>
+                    </div>
+                  </td>
+                  <td>Hyderabad</td>
+                  <td>Product Engg</td>
+                  <td>Full-stack Developer</td>
+                  <td>TZ002341</td>
+                  <td><button class="table-btn">Active</button></td>
+                  <td>12/03/2023</td>
+                  <td>&#8943;</td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" /></td>
+                  <td>
+                    <div id="user-name">
+                      <div id="user-img">
+                        <img src="Assets/Images/user.png" />
+                      </div>
+                      <div id="user-details">
+                        <h4>Edgar jones</h4>
+                        <h6>edgar@tezo.com</h6>
+                      </div>
+                    </div>
+                  </td>
+                  <td>Hyderabad</td>
+                  <td>Product Engg</td>
+                  <td>Full-stack Developer</td>
+                  <td>TZ002341</td>
+                  <td><button class="table-btn">Active</button></td>
+                  <td>12/03/2023</td>
+                  <td>&#8943;</td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" /></td>
+                  <td>
+                    <div id="user-name">
+                      <div id="user-img">
+                        <img src="Assets/Images/user.png" />
+                      </div>
+                      <div id="user-details">
+                        <h4>Edgar jones</h4>
+                        <h6>edgar@tezo.com</h6>
+                      </div>
+                    </div>
+                  </td>
+                  <td>Hyderabad</td>
+                  <td>Product Engg</td>
+                  <td>Full-stack Developer</td>
+                  <td>TZ002341</td>
+                  <td><button class="table-btn">Active</button></td>
+                  <td>12/03/2023</td>
+                  <td>&#8943;</td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" /></td>
+                  <td>
+                    <div id="user-name">
+                      <div id="user-img">
+                        <img src="Assets/Images/user.png" />
+                      </div>
+                      <div id="user-details">
+                        <h4>Edgar jones</h4>
+                        <h6>edgar@tezo.com</h6>
+                      </div>
+                    </div>
+                  </td>
+                  <td>Hyderabad</td>
+                  <td>Product Engg</td>
+                  <td>Full-stack Developer</td>
+                  <td>TZ002341</td>
+                  <td><button class="table-btn">Active</button></td>
+                  <td>12/03/2023</td>
+                  <td>&#8943;</td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" /></td>
+                  <td>
+                    <div id="user-name">
+                      <div id="user-img">
+                        <img src="Assets/Images/user.png" />
+                      </div>
+                      <div id="user-details">
+                        <h4>Edgar jones</h4>
+                        <h6>edgar@tezo.com</h6>
+                      </div>
+                    </div>
+                  </td>
+                  <td>Hyderabad</td>
+                  <td>Product Engg</td>
+                  <td>Full-stack Developer</td>
+                  <td>TZ002341</td>
+                  <td><button class="table-btn">Active</button></td>
+                  <td>12/03/2023</td>
+                  <td>&#8943;</td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" /></td>
+                  <td>
+                    <div id="user-name">
+                      <div id="user-img">
+                        <img src="Assets/Images/user.png" />
+                      </div>
+                      <div id="user-details">
+                        <h4>Edgar jones</h4>
+                        <h6>edgar@tezo.com</h6>
+                      </div>
+                    </div>
+                  </td>
+                  <td>Hyderabad</td>
+                  <td>Product Engg</td>
+                  <td>Full-stack Developer</td>
+                  <td>TZ002341</td>
+                  <td><button class="table-btn">Active</button></td>
+                  <td>12/03/2023</td>
+                  <td>&#8943;</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </section>
     </main>

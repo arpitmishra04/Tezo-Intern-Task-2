@@ -190,7 +190,7 @@ a {
 }
 
 #content-employee-title h4 {
-  font-size: 1.1vw;
+  font-size: 1.2vw;
   color: rgba(0, 51, 101, 0.613);
 }
 
@@ -207,8 +207,7 @@ a {
   height: 50%;
   border-radius: 7px;
   border-width: 0px;
-  width: 18%;
-  margin-left: 8%;
+  width: 20%;
   font-size: 1vw;
   background-color: rgb(255, 88, 88);
   color: white;
@@ -218,81 +217,27 @@ a {
 #add-employee-icon {
   position: absolute;
   width: 1.6vw;
-  left: 11%;
-  top: 18%;
+  left: 3%;
+  top: 20%;
 }
 
-/* FILTER BY CATEGORIES SECTION */
-
-.filter-categories {
-  display: flex;
-  position: relative;
-  height: 30%;
-  border-radius: 7px;
-  margin-top: 2%;
+/* ROLE DETAILS SECTION START */
+#role-description {
   margin-left: 2%;
-  background-color: rgb(255 227 227);
+  margin-top: 1%;
 }
 
-.filter-categories p {
-  color: rgb(255, 88, 88);
-  margin-left: 1%;
-
-  font-size: 1.1vw;
+#role-desc-text {
+  margin-top: -1%;
 }
-
-#dropdown-options {
-  width: 60%;
-  margin-bottom: 1%;
-}
-#dropdown-options select {
-  position: absolute;
-  top: 18%;
-
-  box-sizing: border-box;
-  height: 69%;
-  border-radius: 7px;
-  border-color: red;
+#role-desc-text p {
   font-size: 1vw;
+  line-height: 20px;
+  color: gray;
+  opacity: 0.8;
 }
 
-#location-dropdown {
-  width: 10%;
-  left: 20%;
-}
-
-#department-dropdown {
-  left: 6%;
-  width: 12%;
-}
-
-.employee-filter-btn-container {
-  display: flex;
-  margin-left: 23%;
-  width: 10%;
-}
-
-#reset,
-#apply {
-  height: 55%;
-  width: 50%;
-  margin-top: 10%;
-  border-radius: 5px;
-  border-width: 0px;
-  font-size: 0.9vw;
-}
-
-#reset {
-  color: rgb(255, 88, 88);
-  background-color: white;
-  border-width: 1px;
-  border-color: red;
-}
-#apply {
-  margin-left: 5%;
-  background-color: rgb(255, 88, 88);
-  color: white;
-}
+/* ROLE DETAILS SECTION END */
 
 /* CARD CONTAINER */
 
@@ -300,7 +245,7 @@ a {
   grid-column: 2 / span 12;
   display: grid;
   grid-template-columns: repeat(12, minmax(auto, 60px));
-  grid-gap: 40px;
+  grid-gap: 26px;
   margin-left: 2%;
   margin-top: 2%;
 }
@@ -331,15 +276,23 @@ a {
 
 .card__info {
   position: relative;
+  /* margin-top: 10%; */
   display: flex;
   align-self: end;
   align-items: center;
 }
 
+#employee_code {
+  margin-top: 5%;
+}
+
 .card__info p {
-  color: rgb(0, 29, 70);
+  color: black;
   opacity: 0.6;
   font-size: 1em;
+  margin-top: 1%;
+  padding-top: 0%;
+  margin-bottom: 1%;
 }
 
 .card__info h4 {
@@ -349,21 +302,20 @@ a {
 }
 
 .card__info #department-logo,
-.card__info #location-logo {
+.card__info #location-logo,
+#mail-logo,
+#field-logo {
   position: absolute;
   padding: 0;
 }
 
 #department-txt,
-#location-txt {
+#mail-txt,
+#location-txt,
+#field-txt {
   margin-left: 6%;
 }
 
-.card__info p {
-  margin-top: 1%;
-  padding-top: 0%;
-  margin-bottom: 1%;
-}
 .card__info img {
   margin-left: auto;
   padding: 5px 20px;
@@ -375,23 +327,22 @@ a {
 }
 
 /* .right-content {
-    margin-left: auto;
-    padding: 5px 20px;
-    background-color: #303032;
-    border-radius: 20px;
-  }  */
+      margin-left: auto;
+      padding: 5px 20px;
+      background-color: #303032;
+      border-radius: 20px;
+    }  */
 
-.stack-employe-icon-container {
+.employe-icon-container {
   position: relative;
   width: 30%;
   height: 100%;
-  margin-left: auto;
+  margin-left: 1%;
   padding: 5px 20px;
 }
 
-.stack-employee-icon-container img {
-  position: absolute;
-  width: 8%;
+.employee-icon-container img {
+  width: 10%;
   padding: 0;
   border-radius: 50%;
   border: 1px solid white;
@@ -399,52 +350,47 @@ a {
 
 .stack-employee-icon-container div {
   position: absolute;
-  width: 8%;
+  width: 50%;
   height: 95%;
   border-radius: 50%;
   border: 0.2px solid black;
 }
 
 #stack-img-1 {
-  top: 1%;
-  right: 20%;
+  margin-top: 57%;
+  width: 90%;
+  margin-left: 2%;
 }
 
-#stack-img-2 {
-  top: 1%;
-  right: 18%;
+.employee-icon-container {
+  width: 10%;
 }
 
-#stack-img-3 {
-  top: 1%;
-  right: 16%;
+#employee-icon-description {
+  width: 50%;
 }
 
-#stack-img-4 {
-  top: 1%;
-  right: 14%;
+#employee-icon-title {
+  white-space: nowrap;
+  margin-left: 3%;
 }
 
-#stack-img-5 {
-  top: 1%;
-  right: 12%;
-  background-color: white;
-}
-
-.stack-employee-icon-container div p {
-  position: absolute;
-  top: 20%;
-  left: 4%;
-  font-size: 0.7em;
+#employee-icon-text {
+  margin-top: -13%;
+  font-size: 70%;
+  margin-left: 2%;
 }
 
 #view-all-employee {
-  margin-left: 6em;
+  width: 20%;
+  margin-left: 13em;
   margin-bottom: 0;
 }
 #view-all-employee p {
   white-space: nowrap;
   font-size: 1em;
+  color: gray;
+  opacity: 0.8;
 }
 
 #all-employee-btn-container a {
