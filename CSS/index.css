@@ -404,6 +404,7 @@ a {
   border-radius: 7px;
   border-color: red;
   font-size: 1vw;
+  color: rgba(0, 37, 88, 0.696);
 }
 
 #status-dropdown {
@@ -421,9 +422,8 @@ a {
 .employee-filter-btn-container {
   display: flex;
   margin-left: 23%;
-  width: 10%;
+  width: 12%;
 }
-
 #reset,
 #apply {
   height: 55%;
@@ -457,7 +457,7 @@ a {
   margin-left: 2%;
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
-  box-shadow: 2px 0px 10px rgb(202, 202, 202);
+  box-shadow: -2px 11px 23px rgb(211, 211, 211);
 }
 
 #delete-operation-btn {
@@ -502,7 +502,7 @@ table {
   margin-left: 2%;
   margin-right: 0%;
   border-collapse: collapse;
-  box-shadow: 0px 11px 23px rgb(202, 202, 202);
+  box-shadow: -10px 11px 23px rgb(226, 226, 226);
 }
 th {
   position: sticky;
@@ -511,10 +511,15 @@ th {
   padding-top: 1%;
   padding-bottom: 1%;
   background-color: rgb(241, 241, 241);
+  color: rgba(0, 37, 88, 0.696);
 }
 
 th i {
   margin-left: 3%;
+}
+
+tr:hover {
+  background-color: rgb(255 227 227);
 }
 
 td {
@@ -823,7 +828,6 @@ h6 {
     margin-left: 2%;
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
-    box-shadow: 2px 0px 10px rgb(202, 202, 202);
   }
 }
 

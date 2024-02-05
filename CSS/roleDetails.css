@@ -115,7 +115,7 @@ a {
 }
 
 #update-message {
-  margin-top: 100%;
+  margin-top: 100vh;
   height: 45%;
   margin-right: 5%;
   margin-left: 2%;
@@ -289,7 +289,8 @@ a {
 .card__info p {
   color: black;
   opacity: 0.6;
-  font-size: 1em;
+  font-size: 0.9em;
+  line-height: 1.5;
   margin-top: 1%;
   padding-top: 0%;
   margin-bottom: 1%;
@@ -313,7 +314,7 @@ a {
 #mail-txt,
 #location-txt,
 #field-txt {
-  margin-left: 6%;
+  margin-left: 9%;
 }
 
 .card__info img {
@@ -569,15 +570,7 @@ a {
     left: 6%;
     top: 15%;
   }
-  
-
-  
- 
-
- 
 }
-
-
 
 @media only screen and (max-width: 320px) {
   #sidebar {
@@ -725,13 +718,13 @@ a {
 }
 
 @media only screen and (max-width: 280px) {
-    #view-all-employee {
-      margin-top: 2em;
-      margin-left: 6em;
-      margin-bottom: 0;
-    }
-    #view-all-employee p {
-      white-space: nowrap;
-      font-size: 0.7em;
-    }
+  #view-all-employee {
+    margin-top: 2em;
+    margin-left: 6em;
+    margin-bottom: 0;
   }
+  #view-all-employee p {
+    white-space: nowrap;
+    font-size: 0.7em;
+  }
+}

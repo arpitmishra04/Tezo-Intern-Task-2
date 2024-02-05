@@ -358,6 +358,7 @@ a {
   border-radius: 7px;
   border-color: red;
   font-size: 1vw;
+  color: rgba(0, 37, 88, 0.696);
 }
 
 #location-dropdown {
@@ -373,7 +374,7 @@ a {
 .employee-filter-btn-container {
   display: flex;
   margin-left: 23%;
-  width: 10%;
+  width: 12%;
 }
 
 #reset,
