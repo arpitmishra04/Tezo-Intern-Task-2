@@ -591,6 +591,7 @@ h6 {
   .search {
     width: 100%;
     height: 12vh;
+    margin-left: 1%;
   }
 
   ::placeholder {
@@ -677,25 +678,16 @@ h6 {
     line-height: 72%;
   }
 
-  #content-employee-title p {
-    white-space: nowrap;
-    font-size: 1.3vw;
-    color: rgba(128, 128, 128, 0.676);
-  }
-
   #content-employee-title h4 {
-    font-size: 2dvh;
+    font-size: 4vh;
     color: rgba(0, 51, 101, 0.613);
   }
 
-  #role-desc-title {
-    font-size: 2vw;
-  }
-  #role-desc-text p {
+  #content-employee-title p {
+    white-space: nowrap;
+    margin-top: -2%;
     font-size: 1.3vw;
-    line-height: 20px;
-    color: gray;
-    opacity: 0.8;
+    color: rgba(128, 128, 128, 0.676);
   }
 
   .employee-operation {
@@ -707,24 +699,24 @@ h6 {
 
   #export-btn {
     width: 20%;
-    height: 80%;
-    font-size: 1em;
+    height: 60%;
+    font-size: 1.5vw;
   }
 
   #export-icon {
     width: 2vw;
-    left: 1%;
-    top: 20%;
+    left: 2%;
+    top: 25%;
   }
   #add-employee-btn {
     position: relative;
     margin-top: 4%;
-    height: 80%;
+    height: 60%;
     border-radius: 7px;
     border-width: 0px;
     width: 40%;
     margin-left: 8%;
-    font-size: 1.7vw;
+    font-size: 1.5vw;
     background-color: rgb(255, 88, 88);
     color: white;
     font-weight: 200;
@@ -732,9 +724,9 @@ h6 {
 
   #add-employee-icon {
     position: absolute;
-    width: 3vw;
-    left: 2%;
-    top: 14%;
+    width: 2.5vw;
+    left: 8%;
+    top: 23%;
   }
 
   .search-by-letter {
@@ -764,7 +756,7 @@ h6 {
   }
 
   #dropdown-options {
-    width: 80%;
+    width: 90%;
     margin-bottom: 1%;
   }
   #dropdown-options select {
@@ -772,7 +764,7 @@ h6 {
     top: 2%;
 
     box-sizing: border-box;
-    height: 65%;
+    height: 50%;
     border-radius: 7px;
     border-color: red;
     font-size: 2vw;
@@ -831,10 +823,10 @@ h6 {
   }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 426px) {
   .search {
     width: 100%;
-    height: 8 vh;
+    height: 8vh;
   }
 
   ::placeholder {
@@ -948,8 +940,9 @@ h6 {
   }
 
   .search-by-letter {
-    height: 5vh;
+    height: 4.3vh;
     width: 3vw;
+    border-radius: 3px;
   }
 
   #delete-operation-btn {
@@ -1064,7 +1057,7 @@ h6 {
   #employee-data-table #table-operations {
     position: relative;
     margin-top: 2%;
-    height: 8vh;
+    height: 6vh;
     margin-left: 2%;
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
@@ -1189,8 +1182,9 @@ h6 {
   }
 
   .search-by-letter {
-    height: 5vh;
+    height: 4vh;
     width: 3vw;
+    border-radius: 3px;
   }
 
   #table-operations {
@@ -1344,8 +1338,9 @@ h6 {
   }
 
   .search-by-letter {
-    height: 5vh;
+    height: 4vh;
     width: 3vw;
+    border-radius: 3px;
   }
 
   #delete-operation-btn {
