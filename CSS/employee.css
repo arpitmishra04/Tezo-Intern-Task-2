@@ -585,7 +585,11 @@ h6 {
 
 /* MEDIA QUERIES */
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1000px) {
+  .card {
+    grid-column-end: span 6;
+  }
+
   #sidebar {
     display: none;
   }
@@ -596,8 +600,64 @@ h6 {
 
   .search {
     width: 100%;
-    height: 6vh;
+    height: 8vh;
     margin-left: 1%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  main {
+    grid-gap: 20px;
+  }
+  .card {
+    grid-column-end: span 12;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .cards {
+    grid-column: 2 / span 6;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 20px;
+  }
+  .card {
+    grid-column-end: span 6;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+}
+
+@media only screen and (max-width: 2560px) and (min-width: 2560px) {
+  .cards {
+    grid-column: 2 / span 12;
+    display: grid;
+    grid-template-columns: repeat(12, minmax(auto, 60px));
+    grid-gap: 120px;
+    margin-left: 2%;
+    margin-top: 2%;
+  }
+}
+@media only screen and (min-width: 1000px) and (max-width: 1024px) {
+  .cards {
+    grid-column: 2 / span 12;
+    display: grid;
+    grid-template-columns: repeat(12, minmax(auto, 60px));
+    grid-gap: 8px;
+    margin-left: 2%;
+    margin-top: 2%;
+  }
+
+  #view-all-employee {
+    margin-top: 2em;
+    margin-left: 5em;
+    margin-bottom: 0;
+  }
+}
+@media only screen and (max-width: 492px) {
+  .search {
+    width: 100%;
+    height: 8vh;
   }
 
   ::placeholder {
@@ -610,7 +670,7 @@ h6 {
     position: absolute;
     width: 3%;
     left: 1.5%;
-    top: 25%;
+    top: 30%;
   }
 
   #icon-menu-container {
@@ -621,7 +681,7 @@ h6 {
 
   #profile {
     width: 30%;
-    top: 10%;
+    top: 22%;
     right: -10%;
   }
 
@@ -668,57 +728,63 @@ h6 {
     position: absolute;
     /* height: 57%; */
     width: 2vw;
-    height: 4vh;
+    height: 2vh;
     /* margin-left: 4%; */
     font-size: 2vw;
     /* margin-top: -7%; */
     margin-bottom: 10%;
-    left: 44%;
+    left: 48%;
     border-style: none;
   }
 
-  #content-employee {
-    margin-top: 4%;
-  }
   #content-employee-title {
+    width: 50%;
     line-height: 72%;
   }
 
   #content-employee-title h4 {
-    font-size: 4vh;
+    font-size: 3vw;
     color: rgba(0, 51, 101, 0.613);
   }
 
   #content-employee-title p {
     white-space: nowrap;
-    margin-top: -2%;
-    font-size: 1.3vw;
+    font-size: 1.7vw;
+    margin-top: -7%;
     color: rgba(128, 128, 128, 0.676);
   }
 
   .employee-operation {
     display: flex;
-    width: 80%;
+    width: 65%;
+    margin-left: 0%;
     flex-wrap: wrap;
     justify-content: flex-end;
   }
 
+  #export-btn,
+  #add-employee-btn {
+    position: relative;
+    margin-top: 10%;
+    height: 50%;
+    border-radius: 7px;
+    border-width: 0px;
+  }
+
   #export-btn {
-    width: 20%;
-    height: 27%;
-    margin-top: 20%;
+    width: 24%;
     font-size: 1.5vw;
   }
 
   #export-icon {
-    width: 2vw;
-    left: 2%;
-    top: 25%;
+    position: absolute;
+    width: 1.3vw;
+    left: 7%;
+    top: 37%;
   }
+
   #add-employee-btn {
     position: relative;
-    margin-top: 20%;
-    height: 27%;
     border-radius: 7px;
     border-width: 0px;
     width: 40%;
@@ -731,278 +797,25 @@ h6 {
 
   #add-employee-icon {
     position: absolute;
-    width: 2.5vw;
-    left: 8%;
-    top: 23%;
-  }
-
-  .search-by-letter {
-    height: 4vh;
-    width: 3vw;
-  }
-  .employee-filter-categories {
-    height: 4vh;
-    margin-bottom: 8%;
-    margin-top: 4%;
-  }
-
-  .filter-categories {
-    display: flex;
-    position: relative;
-    height: 100%;
-    border-radius: 7px;
-    margin-top: 2%;
-    margin-left: 2%;
-    background-color: rgb(255 227 227);
-  }
-
-  .filter-categories p {
-    color: rgb(255, 88, 88);
-    margin-left: 1%;
-    margin-top: 1.5%;
-    font-size: 2vw;
-  }
-
-  #dropdown-options {
-    width: 90%;
-    margin-bottom: 1%;
-  }
-  #dropdown-options select {
-    position: absolute;
-    top: 2%;
-
-    box-sizing: border-box;
-    height: 50%;
-    border-radius: 7px;
-    border-color: red;
-    font-size: 2vw;
-  }
-
-  #status-dropdown {
-    width: 10%;
-    left: 5%;
-  }
-  #location-dropdown {
-    width: 18%;
-    left: 45%;
-  }
-
-  #department-dropdown {
-    left: 23%;
-    width: 20%;
-  }
-
-  .employee-filter-btn-container {
-    display: flex;
-    margin-left: 1%;
-    padding-left: 15%;
-    width: 30%;
-  }
-
-  #reset,
-  #apply {
-    height: 50%;
-    width: 40%;
-    margin-top: 6%;
-    border-radius: 5px;
-    border-width: 0px;
-    font-size: 2vw;
-  }
-
-  #reset {
-    color: rgb(255, 88, 88);
-    background-color: white;
-    border-width: 1px;
-    border-color: red;
-  }
-  #apply {
-    margin-left: 5%;
-    background-color: rgb(255, 88, 88);
-    color: white;
-  }
-
-  #employee-data-table #table-operations {
-    position: relative;
-    margin-top: 2%;
-    height: 4vh;
-    margin-left: 2%;
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px;
-  }
-}
-
-@media only screen and (max-width: 492px) {
-  .search {
-    width: 100%;
-    height: 4vh;
-  }
-
-  ::placeholder {
-    padding-left: 6%;
-    font-size: 2vw;
-    opacity: 0.5;
-  }
-
-  #search-icon {
-    position: absolute;
-    width: 3%;
-    left: 1.5%;
-    top: 30%;
-  }
-
-  #icon-menu-container {
-    position: absolute;
-    left: 55%;
-    top: 24%;
-  }
-
-  #profile {
-    width: 30%;
-    top: 22%;
-    right: -10%;
-  }
-
-  #profile-text-container p {
-    margin-top: 2%;
-    margin-bottom: 0%;
-    white-space: nowrap;
-  }
-
-  .profile-image {
-    position: relative;
-    margin-top: 0%;
-    width: 15%;
-    border-radius: 100%;
-  }
-
-  #user-status {
-    width: 3%;
-    height: 19%;
-    border-radius: 50%;
-    border-color: white;
-    border-width: 1px;
-    border-style: solid;
-    background-color: green;
-    position: absolute;
-    top: 75%;
-    left: 11%;
-  }
-
-  #profile-text-container {
-    margin-left: 4%;
-  }
-
-  #profile-name {
-    font-size: 1vw;
-    font-weight: 600;
-  }
-  #profile-designation {
-    font-size: 2vw;
-    font-weight: 800;
-  }
-
-  #profile-dropdown {
-    position: absolute;
-    /* height: 57%; */
     width: 2vw;
-    height: 2vh;
-    /* margin-left: 4%; */
-    font-size: 2vw;
-    /* margin-top: -7%; */
-    margin-bottom: 10%;
-    left: 48%;
-    border-style: none;
-  }
-
-  #export-btn {
-    width: 30%;
-    height: 28%;
-    font-size: 0.5em;
-    margin-top: 40%;
-  }
-
-  #export-icon {
-    width: 3vw;
-    left: 3%;
-    top: 28%;
-  }
-
-  #add-employee-btn {
-    position: relative;
-    margin-top: 40%;
-    height: 27%;
-    border-radius: 7px;
-    border-width: 0px;
-    width: 45%;
-    margin-left: 8%;
-    font-size: 1.7vw;
-    background-color: rgb(255, 88, 88);
-    color: white;
-    font-weight: 200;
-  }
-
-  #add-employee-icon {
-    position: absolute;
-    width: 3vw;
-    left: 2%;
-    top: 28%;
-  }
-
-  .search-by-letter {
-    height: 2.3vh;
-    width: 3vw;
-    border-radius: 3px;
-  }
-
-  #delete-operation-btn {
-    position: absolute;
-    left: 8%;
-    margin-left: 2%;
-    margin-top: 1%;
-    width: 8vw;
-    height: 60%;
-    background-color: rgb(255, 142, 142);
-    color: white;
-    border-radius: 5px;
-    border-width: 1px;
-    border-color: red;
-    font-size: 1.2vw;
-  }
-
-  #employee-data-table #table-operations #arrow-left-down-img {
-    position: absolute;
-    width: 3vw;
-    top: 25%;
     left: 5%;
-  }
-
-  #employee-data-table #table-operations #add-operation-img {
-    position: absolute;
-    width: 3vw;
-    top: 20%;
-    right: 3%;
-  }
-
-  .employee-filter-categories {
-    height: 3vh;
-    margin-bottom: 8%;
-  }
-
-  .filter-categories {
-    display: flex;
-    position: relative;
-    height: 100%;
-    border-radius: 7px;
-    margin-top: 2%;
-    margin-left: 2%;
-    background-color: rgb(255 227 227);
+    top: 28%;
   }
 
   .filter-categories p {
     color: rgb(255, 88, 88);
-    margin-left: 1%;
+    margin-left: 2%;
     margin-top: 3%;
     font-size: 2vw;
+  }
+
+  .search-by-letter {
+    width: 2.5vw;
+    height: 4vh;
+    font-size: 1vw;
+    border-style: none;
+    border-radius: 2px;
+    background-color: rgba(128, 128, 128, 0.125);
   }
 
   #dropdown-options {
@@ -1011,10 +824,9 @@ h6 {
   }
   #dropdown-options select {
     position: absolute;
-    top: 2%;
-
+    top: 28%;
     box-sizing: border-box;
-    height: 65%;
+    height: 4%;
     border-radius: 7px;
     border-color: red;
     font-size: 2vw;
@@ -1022,7 +834,7 @@ h6 {
 
   #status-dropdown {
     width: 10%;
-    left: 5%;
+    left: 8%;
   }
   #location-dropdown {
     width: 18%;
@@ -1045,7 +857,7 @@ h6 {
   #apply {
     height: 50%;
     width: 40%;
-    margin-top: 6%;
+    margin-top: 10%;
     border-radius: 5px;
     border-width: 0px;
     font-size: 2vw;
@@ -1063,148 +875,34 @@ h6 {
     color: white;
   }
 
+  .employee-filter-btn-container {
+    display: flex;
+    margin-left: 0%;
+    padding-left: 9%;
+    width: 34%;
+  }
+
   #employee-data-table #table-operations {
     position: relative;
     margin-top: 2%;
-    height: 3vh;
+    height: 5vh;
     margin-left: 2%;
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
-    box-shadow: 2px 0px 10px rgb(202, 202, 202);
-  }
-}
-
-@media only screen and (max-width: 412px) {
-  .search {
-    width: 100%;
-    height: 4vh;
+    box-shadow: -2px 11px 23px rgb(211, 211, 211);
   }
 
-  ::placeholder {
-    padding-left: 6%;
-    font-size: 2vw;
-    opacity: 0.5;
-  }
-
-  #search-icon {
+  #employee-data-table #table-operations #arrow-left-down-img {
     position: absolute;
-    width: 3%;
-    left: 1.5%;
-    top: 30%;
-  }
-
-  #icon-menu-container {
-    position: absolute;
-    left: 55%;
-    top: 24%;
-  }
-
-  #profile {
-    width: 30%;
-    top: 22%;
-    right: -10%;
-  }
-
-  #profile-text-container p {
-    margin-top: 2%;
-    margin-bottom: 0%;
-    white-space: nowrap;
-  }
-
-  .profile-image {
-    position: relative;
-    margin-top: 0%;
-    width: 15%;
-    border-radius: 100%;
-  }
-
-  #user-status {
-    width: 3%;
-    height: 19%;
-    border-radius: 50%;
-    border-color: white;
-    border-width: 1px;
-    border-style: solid;
-    background-color: green;
-    position: absolute;
-    top: 75%;
-    left: 11%;
-  }
-
-  #profile-text-container {
-    margin-left: 4%;
-  }
-
-  #profile-name {
-    font-size: 1vw;
-    font-weight: 600;
-  }
-  #profile-designation {
-    font-size: 2vw;
-    font-weight: 800;
-  }
-
-  #profile-dropdown {
-    position: absolute;
-    /* height: 57%; */
-    width: 2vw;
-    height: 2vh;
-    /* margin-left: 4%; */
-    font-size: 2vw;
-    /* margin-top: -7%; */
-    margin-bottom: 10%;
-    left: 48%;
-    border-style: none;
-  }
-
-  #export-btn {
-    width: 30%;
-    height: 30%;
-    font-size: 0.5em;
-    margin-top: 30%;
-  }
-
-  #export-icon {
-    width: 3vw;
-    left: 3%;
-    top: 28%;
-  }
-
-  #add-employee-btn {
-    position: relative;
-    margin-top: 30%;
-    height: 30%;
-    border-radius: 7px;
-    border-width: 0px;
-    width: 40%;
-    margin-left: 8%;
-    font-size: 1.7vw;
-    background-color: rgb(255, 88, 88);
-    color: white;
-    font-weight: 200;
-  }
-
-  #add-employee-icon {
-    position: absolute;
-    width: 3vw;
-    left: 2%;
-    top: 28%;
-  }
-
-  .search-by-letter {
-    height: 2vh;
-    width: 3vw;
-    border-radius: 3px;
-  }
-
-  #table-operations {
-    height: 0.7vh;
+    width: 2.5vw;
+    top: 25%;
+    left: 5%;
   }
 
   #delete-operation-btn {
     position: absolute;
-    left: 8%;
-    margin-left: 2%;
+    left: 2%;
+    margin-left: 8%;
     margin-top: 1%;
     width: 8vw;
     height: 60%;
@@ -1216,18 +914,11 @@ h6 {
     font-size: 1.2vw;
   }
 
-  #employee-data-table #table-operations #arrow-left-down-img {
-    position: absolute;
-    width: 3vw;
-    top: 25%;
-    left: 5%;
-  }
-
   #employee-data-table #table-operations #add-operation-img {
     position: absolute;
-    width: 3vw;
-    top: 20%;
-    right: 3%;
+    width: 2.5vw;
+    top: 16%;
+    right: 6%;
   }
 }
 
@@ -1314,27 +1005,33 @@ h6 {
     border-style: none;
   }
 
+  #export-btn,
+  #add-employee-btn {
+    position: relative;
+    margin-top: 10%;
+    height: 50%;
+    border-radius: 7px;
+    border-width: 0px;
+  }
+
   #export-btn {
-    width: 40%;
-    height: 40%;
-    font-size: 0.5em;
+    width: 30%;
+    font-size: 0.3em;
   }
 
   #export-icon {
-    width: 3vw;
-    left: 8%;
-    top: 35%;
+    width: 2vw;
+    left: 10%;
+    top: 30%;
   }
 
   #add-employee-btn {
     position: relative;
-    margin-top: 30%;
-    height: 40%;
     border-radius: 7px;
     border-width: 0px;
-    width: 50%;
+    width: 40%;
     margin-left: 8%;
-    font-size: 1.7vw;
+    font-size: 0.3em;
     background-color: rgb(255, 88, 88);
     color: white;
     font-weight: 200;
@@ -1342,9 +1039,9 @@ h6 {
 
   #add-employee-icon {
     position: absolute;
-    width: 4vw;
-    left: 5%;
-    top: 30%;
+    width: 2vw;
+    left: 2%;
+    top: 32%;
   }
 
   .search-by-letter {
@@ -1383,24 +1080,24 @@ h6 {
   }
 
   .employee-filter-categories {
-    height: 5vh;
+    height: 7vh;
     margin-bottom: 8%;
   }
 
   .filter-categories {
     display: flex;
     position: relative;
-    height: 100%;
+    height: 72%;
     border-radius: 7px;
-    margin-top: 2%;
+    margin-top: 4%;
     margin-left: 2%;
     background-color: rgb(255 227 227);
   }
 
   .filter-categories p {
     color: rgb(255, 88, 88);
-    margin-left: 1%;
-    margin-top: 3%;
+    margin-left: 2%;
+    margin-top: 2%;
     font-size: 2vw;
   }
 
@@ -1410,8 +1107,7 @@ h6 {
   }
   #dropdown-options select {
     position: absolute;
-    top: 2%;
-
+    top: 1%;
     box-sizing: border-box;
     height: 65%;
     border-radius: 7px;
@@ -1444,7 +1140,7 @@ h6 {
   #apply {
     height: 50%;
     width: 40%;
-    margin-top: 6%;
+    margin-top: 10%;
     border-radius: 5px;
     border-width: 0px;
     font-size: 2vw;
@@ -1465,10 +1161,22 @@ h6 {
   #employee-data-table #table-operations {
     position: relative;
     margin-top: 2%;
-    height: 3vh;
+    height: 5vh;
     margin-left: 2%;
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
     box-shadow: 2px 0px 10px rgb(202, 202, 202);
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  #view-all-employee {
+    margin-top: 2em;
+    margin-left: 6em;
+    margin-bottom: 0;
+  }
+  #view-all-employee p {
+    white-space: nowrap;
+    font-size: 0.7em;
   }
 }
