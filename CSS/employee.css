@@ -525,7 +525,7 @@ tr:hover {
 td {
   font-size: 1vw;
   text-align: center;
-  width: 13%;
+  width: 12%;
   padding-top: 1%;
   padding-bottom: 1%;
   border-bottom: 1px solid black;
@@ -541,9 +541,15 @@ td {
   border-radius: 5px;
 }
 
+input[type="checkbox"] {
+  width: 2vw;
+  height: 2vh;
+}
+
 #user-name {
   display: flex;
   align-items: center;
+  width: 91%;
 }
 
 #user-img {
@@ -590,7 +596,7 @@ h6 {
 
   .search {
     width: 100%;
-    height: 12vh;
+    height: 6vh;
     margin-left: 1%;
   }
 
@@ -699,7 +705,8 @@ h6 {
 
   #export-btn {
     width: 20%;
-    height: 60%;
+    height: 27%;
+    margin-top: 20%;
     font-size: 1.5vw;
   }
 
@@ -710,8 +717,8 @@ h6 {
   }
   #add-employee-btn {
     position: relative;
-    margin-top: 4%;
-    height: 60%;
+    margin-top: 20%;
+    height: 27%;
     border-radius: 7px;
     border-width: 0px;
     width: 40%;
@@ -730,12 +737,13 @@ h6 {
   }
 
   .search-by-letter {
-    height: 8vh;
+    height: 4vh;
     width: 3vw;
   }
   .employee-filter-categories {
-    height: 10vh;
+    height: 4vh;
     margin-bottom: 8%;
+    margin-top: 4%;
   }
 
   .filter-categories {
@@ -816,17 +824,17 @@ h6 {
   #employee-data-table #table-operations {
     position: relative;
     margin-top: 2%;
-    height: 11vh;
+    height: 4vh;
     margin-left: 2%;
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
   }
 }
 
-@media only screen and (max-width: 426px) {
+@media only screen and (max-width: 492px) {
   .search {
     width: 100%;
-    height: 8vh;
+    height: 4vh;
   }
 
   ::placeholder {
@@ -908,8 +916,9 @@ h6 {
 
   #export-btn {
     width: 30%;
-    height: 40%;
+    height: 28%;
     font-size: 0.5em;
+    margin-top: 40%;
   }
 
   #export-icon {
@@ -920,11 +929,11 @@ h6 {
 
   #add-employee-btn {
     position: relative;
-    margin-top: 4%;
-    height: 40%;
+    margin-top: 40%;
+    height: 27%;
     border-radius: 7px;
     border-width: 0px;
-    width: 40%;
+    width: 45%;
     margin-left: 8%;
     font-size: 1.7vw;
     background-color: rgb(255, 88, 88);
@@ -940,7 +949,7 @@ h6 {
   }
 
   .search-by-letter {
-    height: 4.3vh;
+    height: 2.3vh;
     width: 3vw;
     border-radius: 3px;
   }
@@ -975,7 +984,7 @@ h6 {
   }
 
   .employee-filter-categories {
-    height: 6vh;
+    height: 3vh;
     margin-bottom: 8%;
   }
 
@@ -1057,7 +1066,7 @@ h6 {
   #employee-data-table #table-operations {
     position: relative;
     margin-top: 2%;
-    height: 6vh;
+    height: 3vh;
     margin-left: 2%;
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
@@ -1068,7 +1077,7 @@ h6 {
 @media only screen and (max-width: 412px) {
   .search {
     width: 100%;
-    height: 8vh;
+    height: 4vh;
   }
 
   ::placeholder {
@@ -1150,8 +1159,9 @@ h6 {
 
   #export-btn {
     width: 30%;
-    height: 40%;
+    height: 30%;
     font-size: 0.5em;
+    margin-top: 30%;
   }
 
   #export-icon {
@@ -1162,8 +1172,8 @@ h6 {
 
   #add-employee-btn {
     position: relative;
-    margin-top: 4%;
-    height: 40%;
+    margin-top: 30%;
+    height: 30%;
     border-radius: 7px;
     border-width: 0px;
     width: 40%;
@@ -1182,7 +1192,7 @@ h6 {
   }
 
   .search-by-letter {
-    height: 4vh;
+    height: 2vh;
     width: 3vw;
     border-radius: 3px;
   }
@@ -1305,24 +1315,24 @@ h6 {
   }
 
   #export-btn {
-    width: 30%;
+    width: 40%;
     height: 40%;
     font-size: 0.5em;
   }
 
   #export-icon {
     width: 3vw;
-    left: 3%;
-    top: 28%;
+    left: 8%;
+    top: 35%;
   }
 
   #add-employee-btn {
     position: relative;
-    margin-top: 4%;
+    margin-top: 30%;
     height: 40%;
     border-radius: 7px;
     border-width: 0px;
-    width: 40%;
+    width: 50%;
     margin-left: 8%;
     font-size: 1.7vw;
     background-color: rgb(255, 88, 88);
@@ -1332,9 +1342,9 @@ h6 {
 
   #add-employee-icon {
     position: absolute;
-    width: 3vw;
-    left: 2%;
-    top: 28%;
+    width: 4vw;
+    left: 5%;
+    top: 30%;
   }
 
   .search-by-letter {
@@ -1455,7 +1465,7 @@ h6 {
   #employee-data-table #table-operations {
     position: relative;
     margin-top: 2%;
-    height: 5vh;
+    height: 3vh;
     margin-left: 2%;
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
